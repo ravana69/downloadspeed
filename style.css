@@ -1,0 +1,472 @@
+ /* CSS GOES HERE */
+ 
+body{
+	font-family: roboto, sans-serif;
+	background-color: #43406F;
+	width: 100%;
+	margin: 0;
+}
+
+.content{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width: 600px;
+}
+h1, h2,h3,h4{
+	color: #444;
+}
+
+
+.h1sp{
+	color:white;
+	line-height: 1;
+}
+.bol{
+    	font-size: 12pt;
+    	color:black;
+    	font-weight: bold;
+}
+
+.content #speed,
+.content #file,
+.content #results,
+.content #downloadSimulatorWindow_{
+	border: 1px solid red;
+	border: 1px solid gray;
+	border-radius: 3px;
+	background-color: #EEE;
+	box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
+	width: 96%;
+	margin: 20px auto;
+}
+
+input, button{
+	font-size: 16pt;
+}
+
+
+
+#speed {
+	text-align: center;
+}
+#speed input{
+	text-align: right;
+}
+#speed .idkSpeed{
+	font-size: 8pt;
+	line-height: 3;
+}
+#speed .idkSpeed.mobile{
+	font-size: 11pt;
+}
+.overhead-p{
+	font-size: 8pt;
+}
+
+#file{
+	text-align: center;
+}
+#file input{
+	font-size: 16pt;
+	text-align: right;
+}
+.examples-p{
+	font-size: 8pt;
+}
+
+
+#results{
+	background-color: #FFF !important;
+	text-align: center;
+	
+	visibility: hidden;
+}
+#results .time{
+	font-style:normal;
+	font-size:28px;
+    
+}
+#results .time em{
+	font-style:normal;
+	font-size:32px;
+}
+
+
+#downloadSimulatorWindow {
+	position: relative;
+	width: 600px;
+	height: 119px;
+
+	-color: gray;
+	opacity: 0.5;
+	/*
+	border: 1px solid gray;
+	border-radius: 5px;
+	
+	visibility: hidden;
+	box-shadow: 0px 1px 16px rgba(0,0,0,0.5);
+	*/
+}
+#downloadSimulatorWindow .filename {
+	position: absolute;
+	left: 85px;
+	top: 18px;
+	width: 355px;
+	height: 15px;
+}
+#downloadSimulatorWindow .progresrbar {
+    position: absolute;
+    left: 85px;
+    top: 38px;
+    width: 398px;
+    height: 22px;
+}
+#downloadSimulatorWindow progress{
+    width: 100%;
+    height: 22px;
+    
+}
+#downloadSimulatorWindow .percent {
+    position: absolute;
+    left: 435px;
+    top: 15px;
+    width: 49px;
+    height: 17px;
+    	
+    text-align: right;
+}
+#downloadSimulatorWindow .details {
+    position: absolute;
+    left: 85px;
+    top: 63px;
+    width: 401px;
+    height: 19px;
+    
+    padding-left: 0.5em;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+#downloadSimulatorWindow .icon {
+	position: absolute;
+	left: 10px;
+	top: 18px;
+	width: 64px;
+	height: 64px;
+}
+#downloadSimulatorWindow .ps {
+	position: absolute;
+	right: 0px;
+	bottom: -2px;
+	width: 514px;
+	height: 18px;
+	padding-right: 4px;
+	font-size: 10px;
+	text-align: right;
+}
+
+.footer{
+	text-align: center;
+	font-size: 9pt;
+	padding: 1em;
+	background-color: #000000;
+}
+
+
+#calculateButton{
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+/*****/
+#speedtest_mobile{
+	display: none;
+
+	margin: 30px;
+	background: #333;
+	color: #FFF;
+}
+#speedtest_mobile a{
+	color: #FFF;
+	margin:20px;
+}
+/*
+.mobile-iphone-btn,
+.mobile-windows-btn,
+.mobile-android-btn,
+.mobile-amazon-btn{
+	width: 230px;
+	height: 74px;
+	background: url(http://www.speedtest.net/mobile/../images/app-store-sprite.png);
+	background-position: 0px -2px;
+	display: block;
+	-float: left;
+	display: inline-block;
+}
+
+.mobile-iphone-btn{
+	background-position: 0px -2px;
+}
+.mobile-windows-btn{
+	background-position: 245px -2px;
+}
+.mobile-android-btn{
+	background-position: 483px -2px;
+}
+.mobile-amazon-btn{
+	background-position: 0 -2px;
+	background: url(http://www.speedtest.net/mobile/../images/app-store-amazon.png);
+}
+*/
+
+.speedtest-mobile-ico{
+	width: 124px;
+	height: 124px;
+	background-image: url(../www.speedtest.net/images/placeholder-mobile-header.html);
+	-webkit-background-size: 124px 124px;
+	-moz-background-size: 124px 124px;
+	background-size: 124px 124px;
+	background-repeat: no-repeat;
+	width: 70px;
+	height: 70px;
+	-webkit-background-size: 70px 70px;
+	-moz-background-size: 70px 70px;
+	background-size: 70px 70px;
+	-float: left;
+	margin-left: 8px;
+	margin-right: 15px;
+
+	-float: left;
+	margin-left: 50px;
+	margin-top: 35px;
+
+	display: inline-block;
+}
+
+/******/
+.collapse{
+	font-size: 8pt;
+	display: block;
+	line-height: 44px;
+	
+	color: gray;
+}
+.collapse:hover{
+	color: white;
+	-background-color: #FCFCFC;
+}
+.collapse + input{
+  display:none;
+}
+.collapse + input + div{
+  display:none;
+}
+.collapse+ input:checked + div{
+  display:block;
+}
+ 
+
+
+.center{
+    line-height: 35px;
+    font-size: 26px;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 0 1px rgba(white, .75);
+}
+
+
+
+/*--modal box---*/
+input {margin-bottom: 27px;/* padding: 0 0px 0px; */margin: 2px;font-size: 18px;background: white;border: 2px solid #ebebeb;border-radius: 4px;-webkit-box-shadow: inset 0 -2px #ebebeb;box-shadow: inset 0 -2px #ebebeb;}
+
+button {background-color: #82BF56;border-bottom: 5px solid #669644 !important;text-shadow: 0px -2px #669644;border-radius: 6px;color: #fff;font-weight: bold;border: none;width: 187px;height: 54px;position: relative;font-size: 17px;cursor: pointer;margin-top: 0px;text-align: center;top: 9px;}
+button:active{
+    position:relative;
+	top:11px;
+}
+
+.login-top-colour{
+
+content: '';
+position: relative;
+bottom: 0;
+left: 0;
+right: 0;
+height: 8px;
+background: #c4e17f;
+border-radius: 5px 5px 0 0;
+background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
+
+
+
+#internetSpeed_p{
+    
+padding: 18px 22px;
+}
+#internetSpeed_p:hover{
+    
+background-color: #F15A5C;
+    
+transition-duration: 0.7s;
+    
+color: azure;
+}
+
+#internetSpeed_p:active{
+    
+ position:relative;
+	top:2px;    
+}
+
+#internetSpeed, #fileSize{
+    width: 75px;
+    padding: 18px;
+    padding-right: 7px;
+}
+
+ 
+
+
+select{
+        padding: 18px 10px;
+        border: 0;
+        font-size: 18px;
+        margin: 2px;
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+.br{
+    background-color: #3F355F;
+}
+
+.br2{
+    background-color: #332F46;
+}
+.info{
+    background-color: #292733;
+    color: brown;
+    padding-top: 40px;
+    padding-bottom:  40px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+@media screen and (max-width: 600px){
+ 
+.content {width:100%}
+
+#downloadSimulatorWindow{display:none;}
+
+h1{font-size: 1.5em}
+h4{font-size: .8em}
+
+}
+
+
+@media screen and (max-width: 1199px){
+
+.mobile{
+	display:block;
+}
+
+.desktophead{display:none;}
+.desktopleftside{display:none;}
+.desktoprightside{display:none;}
+
+label {
+    display: none;
+}
+
+.footer a {
+    text-align: center;
+    line-height: 3;
+    font-size: 9pt;
+    padding: 1.6em;
+}
+
+
+}
+
+
+@media screen and (min-width: 1200px){
+	
+	.mobile{
+	display:none;
+}
+
+.desktophead{
+	padding-top: 10px;
+	margin-bottom: 10px;
+	width: 728px;
+	height: 90px;
+	margin: auto;
+}
+
+.desktoplayout{
+	width: 1250px;
+	margin: auto;
+}
+
+.desktopleftside{
+	width: 328px;
+	height: 600px;
+	display:block;
+	float: left;
+	margin: auto;
+	margin-left: -32px;
+}
+
+.desktopcenter{
+	width: 600px;
+	display:block;
+	position: relative;
+	margin: auto;
+}
+
+.desktoprightside{
+	width: 300px;
+	display: block;
+	height: 600px;
+	float: right;
+}
+
+
+}
+
+.downloadtimeimage{
+	width: 100%;
+	    margin-bottom: 16px;
+}
